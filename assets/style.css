@@ -301,3 +301,24 @@ footer a:hover {
 .expand-btn:hover {
     background-color: #555;
 }
+
+/* Social Links Styling */
+.social-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px;  /* Increase size of icons */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #f0f0f0; /* Light hover effect */
+    transform: scale(1.1); /* Slightly scale up the icon on hover */
+}

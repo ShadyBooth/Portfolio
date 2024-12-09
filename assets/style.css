@@ -1,0 +1,303 @@
+:root {
+    --primary-color: #222222; /* Solid black background */
+    --secondary-color: #333333; /* Dark gray for subtle contrast */
+    --accent-color: #50e3c2; /* Teal accents for highlights */
+    --text-color: #f4f4f4; /* Light text color for contrast */
+    --highlight-color: #f5a623; /* Gold for buttons */
+    --footer-background: #111111; /* Dark footer */
+    --rounded-corner: 10px;
+}
+
+html {
+    font-size: 100%;
+    background: var(--primary-color);
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding-left: 20px;
+    padding-top: 80px; /* Space for fixed nav */
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 20px;
+    border-radius: var(--rounded-corner);
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    margin: 40px 0;
+}
+
+#about {
+    background-color: var(--primary-color);
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: var(--rounded-corner);
+    color: var(--text-color);
+    max-width: 1200px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.profile-photo {
+    max-width: 25%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+#portfolio {
+    background-color: #333333;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: var(--rounded-corner);
+    max-width: 1200px;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.project {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #222222;
+    border-radius: var(--rounded-corner);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box; /* Prevents content from touching edges */
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#contact {
+    background-color: var(--primary-color);
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: var(--rounded-corner);
+    color: var(--text-color);
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px; /* Adds spacing between button and text */
+}
+
+.td-btn:hover {
+    background-color: var(--highlight-color);
+}
+
+footer {
+    background-color: var(--footer-background);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #f4f4f4;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-photo {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+    }
+
+    .td-btn {
+        padding: 10px 30px;
+    }
+}
+
+/* Ensure the expandable content is hidden by default */
+.expandable-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color); /* Set light background for readability */
+    color: #ffffff !important; /* Set dark text for readability */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* When the content is expanded, ensure it's visible */
+.expandable-content.show {
+    display: block !important; /* Force visibility */
+    background-color: var(--secondary-color); /* Slightly darker background */
+}
+
+/* Button style */
+.expand-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.expand-btn:hover {
+    background-color: #555;
+}

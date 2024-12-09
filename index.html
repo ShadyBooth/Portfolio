@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/script.js"></script>
+</head>
+
+<body>
+    <header class="header-background">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Hi there, I'm Shady</h1>
+            <p>A Sydney-based Computer Scientist Graduate from Western Sydney University, majored in Artificial Intelligence</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="portfolio">
+            <h2>University Projects</h2>
+
+            <div class="project" id="project1">
+                <h3>Project 1: Cinema Movie Database</h3>
+                <p> An interactable Cinema Movie Database created in both Android Java and Swift</p>
+                <button class="expand-btn">Read More</button>
+                <div class="expandable-content">
+                    <p>Allows for the searching of movies by title, director, cast, and release date. Includes an option to filter by upcoming, and released movies. 
+                        Once selected you can view the cinemas the movie is available at, and can be automatically searched on Google Maps within the App. Fetches 
+                        information from a SQL database, and allows for the editing and deleting entries from within the app.</p>
+                </div>
+            </div>
+
+            <div class="project" id="project2">
+                <h3>Project 2: Interactable Spreadsheet</h3>
+                <p>This project involves two programs created using a Java library called Processing</p>
+                <button class="expand-btn">Read More</button>
+                <div class="expandable-content">
+                    <p>The first project is a 2D interactable spreadsheet, where you can insert an excel spreadsheet which contains Name, X, Group, Year of Birth, Grade, Gender, and Y. 
+                        This is then displayed in a 2D Graph, where the characteristics of each object is shown, grade indicates size, group indicates shape, and its displayed on the correct
+                        coordinates. You can interact with this object, change its characteristics and move it on either X and Y and save it back to the file, with the updated parameters.</p><br>
+                    <p>
+                        The second project is a 3D interactable spreadsheet, it includes an additional parameter Z and is used within a 3D space, it has additional features where you can move 
+                        multiple objects at once, delete objects, undo actions, copy objects, add different characteristics to objects such as wireframe, colour, outline, and when saved its 
+                        added to the output of the file. The parameters for characteristics will then be applied when the document is added back.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project" id="project3">
+                <h3>Project 3: Music playlist database</h3>
+                <p>This project uses JavaScript, SQL and PHP to create a music playlist database with customised accounts</p>
+                <button class="expand-btn">Read More</button>
+                <div class="expandable-content">
+                    <p>
+                        The project was deployed on a live server within the university site. The project functioned similar to spotify, where users can search for music within the
+                        web application and play it. Users can also create personalised accounts where they can create their own playlist and add songs directly to it. The type of account
+                        the user had dictated the amount of features available, with "Free" only having the ability to create 3 personalised accounts, and "Premium" creating infinite.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me for any project collaboration, questions, or opportunities!</p>
+            <button class="td-btn">Download Resume</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 Shady Booth — All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

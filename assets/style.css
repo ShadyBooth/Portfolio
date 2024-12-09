@@ -26,7 +26,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     padding-left: 20px;
-    padding-top: 80px; 
+    padding-top: 80px; /* Space for fixed nav */
     min-height: 100vh;
     background-color: var(--primary-color);
 }
@@ -145,7 +145,7 @@ main {
     border-radius: var(--rounded-corner);
     transition: transform 0.3s ease-in-out;
     padding: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Prevents content from touching edges */
 }
 
 .project:hover {
@@ -181,7 +181,7 @@ main {
     max-width: 1200px;
     width: 100%;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
 
 #contact h2 {
@@ -206,7 +206,7 @@ main {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    margin-top: 20px; 
+    margin-top: 20px; /* Adds spacing between button and text */
 }
 
 .td-btn:hover {
@@ -314,11 +314,23 @@ footer a:hover {
 .social-icon {
     text-decoration: none;
     color: #fff;
-    font-size: 36px;  
+    font-size: 36px;  /* Increase size of icons */
     transition: color 0.3s, transform 0.3s;
 }
 
 .social-icon:hover {
-    color: #f0f0f0; 
-    transform: scale(1.1);
+    color: #f0f0f0; /* Light hover effect */
+    transform: scale(1.1); /* Slightly scale up the icon on hover */
+}
+
+.project img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline-block space */
+    margin: 10px auto; /* Centers the image horizontally */
+}
+
+.project .expand-btn {
+    margin: 10px 0;
+    cursor: pointer;
 }

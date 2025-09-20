@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shady Booth</title>
+
+  <!-- Font Awesome for professional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 style=display:flex; class="title">Shady Booth</h1>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <div class="social-links">
+        <a href="mailto:shadybooth.compsci@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/ShadyBooth" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/shadybooth" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="intro-section">
+    <div class="container intro-box">
+      <h1 class="typewriter">Hi, Shady here.</h1>
+      <p>A Sydney-based Computer Science Graduate (AI) from Western Sydney University</p>
+      <p>I like building web apps, exploring AI, and creating digital experiences that are both beautiful and functional.</p>
+      <br>
+      <a href="mailto:shadybooth.compsci@gmail.com" class="git-button">Get in Touch</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container section-box">
+        <h2>/ About Me</h2>
+        <p>I am currently a <b>Service Desk Technician</b> and recently graduated with a Bachelor of Computer Science (AI Major) from Western Sydney University.</p>
+        <br>
+        <p>Technologies I work with:</p>
+        <ul class="tech-stack">
+          <li>Programming & Development: PHP, Java, JavaScript, React.js, Node.js, Swift, C++, C#, C, Python</li>
+          <li>Cloud & DevOps Exposure: AWS, Azure, CI/CD pipelines, Docker, Git version control</li>
+          <li>Backend & Data: SQL (Postgres/MySQL), REST API development, database design (ERD, normalisation)</li>
+          <li>Methodologies: Agile/Scrum, problem-solving, teamwork, translating technical concepts into simple English.</li>
+          <li>Linux/Unix: Linux environments, Unix systems, security testing, scripting</li>
+        </ul>
+        <br>
+        <p>Outside of work, I enjoy gaming and exploring new tech projects.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container section-box">
+        <h2>/ Experience</h2>
+        <div class="tabs">
+          <button class="tab-button active" data-tab="job1">Service Desk Technician</button>
+          <button class="tab-button" data-tab="job2">Software Developer Internship</button>
+          <button class="tab-button" data-tab="job3">Manufacturing</button>
+        </div>
+        <div class="tab-content active" id="job1">
+          <p><b>Service Desk Technician (Contractor)</b></p>
+            <p><i>Kinetic IT, Supporting Qantas & Jetstar</i> | Mascot, NSW </p>
+            <p>March 2025 - Present | Hybrid</p>
+          <ul>
+            <li>Administered user accounts and devices via Active Directory, Azure AD, and Intune.</li>
+            <li>Troubleshot and resolved complex technical issues, building strong problem-solving and debugging skills 
+              transferable to software development.</li>
+            <li>Delivered remote IT support by using SCCM Remote Control and RDP, alongside onsite support.</li>
+            <li>Achieved the team’s highest NPS in May 2025, reflecting excellent customer engagement.</li>
+          </ul>
+        </div>
+        <div class="tab-content" id="job2">
+          <p><b>Software Developer – COMP3018 Professional Experience Project</b></p>
+            <p><i>Western Sydney University (in collaboration with Western Sydney Airport & DXC)</i> | Parramatta, NSW </p>
+            <p>Jul 2024 - Nov 2024 | Remote</p>
+          <ul>
+            <li>Developed a full stack microservice application to improve airport staff workflow efficiency.</li>
+            <li>Designed interactive modules and REST APIs using React.js, Node.js, and PostgreSQL.</li>
+            <li>Deployed application via AWS and Azure, implementing CI/CD pipelines for continuous delivery</li>
+            <li>Collaborated with industry partners following Agile methodology, delivering demos, documentation, and 
+              working dashboards for flight data, scheduling, and security management.</li>
+          </ul>
+        </div>
+        <div class="tab-content" id="job3">
+          <p><b>Manufacturing Team Member</b></p>
+            <p><i>Krispy Kreme Manufacturing</i> | Sydney, NSW </p>
+            <p>November 2022 - April 2025 | Onsite</p>
+          <ul>
+            <li>Assisted in troubleshooting and repairing machinery to ensure smooth operations.</li>
+            <li>Trained new staff with clear communication, ensuring they adhere to the food safety procedures</li>
+            <li>Demonstrated strong time management in a fast-paced environment.</li>
+            <li>Performed occasional managerial duties, coordinating orders and inquiries with managers and customers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container section-box">
+        <h2>/ Projects</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-box">
+      <p>© 2025 Shady Booth. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
